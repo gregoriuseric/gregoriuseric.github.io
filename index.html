@@ -1,11 +1,11 @@
-dd<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="/image/atom icon.png" sizes="32x32" />
     <!-- Carousel -->
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
@@ -62,10 +62,10 @@ dd<!DOCTYPE html>
   <div class="row align-items-center">
           <div class="col-md-7">
             <div class="home-text">
-              <p>Hello</p>
-              <h2>I am <span>Eric</span> Gregorius</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero quam unde enim incidunt dolorum quaerat a, totam maiores animi? Inventore dolorum reprehenderit laudantium aliquam.</p>
-              <div class="home-btn">
+              <p class="home-animate">Hello</p>
+              <h2 class="home-animate">I am <span>Eric</span> Gregorius</h2>
+              <p class="home-animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero quam unde enim incidunt dolorum quaerat a, totam maiores animi? Inventore dolorum reprehenderit laudantium aliquam.</p>
+              <div class="home-btn home-animate">
                 <a href="#skills" class="btn btn-1"><i class="fas fa-search home-btn-icon"></i>My Skills</a>
               </div>
             </div>
@@ -87,15 +87,15 @@ dd<!DOCTYPE html>
           </div>
           <div class="col-md-7">
             <div class="about-header">
-              <h2>About <span>Me</span></h2>
+              <h2 class="about-animate">About <span>Me</span></h2>
             </div>
             <div class="about-text">
-              <p>I am</p>
-              <h2><span>Fresh</span> Graduate Programmer</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero quam unde enim incidunt dolorum quaerat a, totam maiores animi? Inventore dolorum reprehenderit laudantium aliquam.</p>
+              <p class="about-animate">I am</p>
+              <h2 class="about-animate"><span>Fresh</span> Graduate Programmer</h2>
+              <p class="about-animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero quam unde enim incidunt dolorum quaerat a, totam maiores animi? Inventore dolorum reprehenderit laudantium aliquam.</p>
             </div>
-            <div class="row justify-content-evenly">
-              <div class="col-md-3 text-center hobby-card hobby-card">
+            <div class="row justify-content-evenly about-animate">
+              <div class="col-md-3 text-center hobby-card">
                 <i class="fas fa-code hobby-item"></i>
                 <p>Learn Code</p>
               </div>
@@ -121,7 +121,7 @@ dd<!DOCTYPE html>
       <div class="container">
         <div class="row text-center justify-content-center">
           <div class="col-md-8">
-            <h2 class="header">My <span>Skills</span></h2>
+            <h2 class="header skill-header-animate">My <span>Skills</span></h2>
           </div>
         </div>
           <div class="row">
@@ -145,10 +145,6 @@ dd<!DOCTYPE html>
               <div class="skill-item">
                 <i class="fas fa-images fa-5x"></i>
                 <h2>Photoshop</h2>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt fa-5x"></i>
-                <h2>CSS</h2>
               </div>
             </div>
           </div>
@@ -261,6 +257,7 @@ dd<!DOCTYPE html>
       </div>
     </footer>
 
+    <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     
     <!-- Bootstrap 5 -->
@@ -268,6 +265,10 @@ dd<!DOCTYPE html>
 
     <!-- Carousel -->
     <script src="/js/owl.carousel.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     
     <script src="app.js"></script>
   </body>

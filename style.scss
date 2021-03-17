@@ -228,6 +228,7 @@ body {
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
 
     span {
       color: var(--primary-color);
@@ -271,6 +272,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.2rem;
     padding: 1rem 0;
+    margin-bottom: 2rem;
   }
   h2 span {
     color: var(--primary-color);
@@ -339,7 +341,7 @@ body {
 
 @media (max-width: 768px) {
   #home p:nth-child(1) {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 
   #about h2 {
@@ -349,6 +351,6 @@ body {
 
 @media (max-width: 576px) {
   #home p:nth-child(1) {
-    padding-top: 3rem;
+    padding-top: 6rem;
   }
 }
