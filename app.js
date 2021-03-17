@@ -21,31 +21,32 @@ document.addEventListener("DOMContentLoaded", function () {
         items: 2,
       },
       1000: {
-        items: 3,
+        items: 4,
       },
     },
   });
 
   // GSAP
   gsap.from(".home-animate", {
-    y: 100,
+    y: 10,
     duration: 1.2,
     opacity: 0,
     stagger: 0.3,
   });
 
   gsap.from(".img-home", {
-    x: 100,
+    x: 10,
     duration: 1.2,
     opacity: 0,
   });
 
   gsap.from(".about-animate", {
     scrollTrigger: {
-      trigger: "#about",
-      start: "top 100%",
+      trigger: ".about-header",
+      start: "top 80%",
+      mark: true,
     },
-    y: 100,
+    y: 10,
     duration: 1.2,
     opacity: 0,
     stagger: 0.3,
@@ -54,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".img-about", {
     scrollTrigger: {
       trigger: "#about",
-      start: "top 100%",
+      start: "top 80%",
     },
-    x: -100,
+    x: -10,
     duration: 1.2,
     opacity: 0,
   });
@@ -66,20 +67,20 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#skills",
       start: "top 80%",
     },
-    y: -100,
+    y: -10,
     duration: 1.2,
     opacity: 0,
   });
 
-  gsap.from(".skill-item", {
+  gsap.from(".skill-carousel", {
     scrollTrigger: {
       trigger: "#skills",
       start: "top 80%",
     },
-    y: 100,
+    y: 10,
     duration: 1.2,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
   });
 
   gsap.from(".contact-header", {
@@ -87,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    y: -100,
+    y: -10,
     duration: 1.2,
     opacity: 0,
   });
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    x: -100,
+    x: -10,
     duration: 1.2,
     opacity: 0,
   });
@@ -107,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    x: 100,
+    x: 10,
     duration: 1.2,
     opacity: 0,
   });
