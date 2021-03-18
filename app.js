@@ -1,13 +1,14 @@
-document.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY >= 80) {
-    navbar.classList.add("navbar-shrink");
-  } else {
-    navbar.classList.remove("navbar-shrink");
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY >= 80) {
+      navbar.classList.add("navbar-shrink");
+    } else {
+      navbar.classList.remove("navbar-shrink");
+    }
+  });
+
+  // Carousel
   $(".skill-carousel").owlCarousel({
     loop: true,
     margin: 0,
@@ -28,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // GSAP
   gsap.from(".home-animate", {
-    y: 10,
+    y: 50,
     duration: 1.2,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
   });
 
   gsap.from(".img-home", {
-    x: 10,
+    x: 50,
     duration: 1.2,
     opacity: 0,
   });
@@ -46,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 80%",
       mark: true,
     },
-    y: 10,
+    y: 50,
     duration: 1.2,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.2,
   });
 
   gsap.from(".img-about", {
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#about",
       start: "top 80%",
     },
-    x: -10,
+    x: -50,
     duration: 1.2,
     opacity: 0,
   });
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#skills",
       start: "top 80%",
     },
-    y: -10,
+    y: -50,
     duration: 1.2,
     opacity: 0,
   });
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#skills",
       start: "top 80%",
     },
-    y: 10,
+    y: 50,
     duration: 1.2,
     opacity: 0,
     stagger: 0.2,
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    y: -10,
+    y: -50,
     duration: 1.2,
     opacity: 0,
   });
@@ -98,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    x: -10,
+    x: -50,
     duration: 1.2,
     opacity: 0,
   });
@@ -108,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: "#contact",
       start: "top 80%",
     },
-    x: 10,
+    x: 50,
     duration: 1.2,
     opacity: 0,
   });

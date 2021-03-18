@@ -10,6 +10,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #eee;
+}
+
 section {
   width: 100%;
   min-height: 100vh;
@@ -113,10 +117,6 @@ img {
 .navbar-nav {
   letter-spacing: 0.3em;
   font-weight: 600;
-}
-
-body {
-  background-color: #eee;
 }
 
 #home h2 {
