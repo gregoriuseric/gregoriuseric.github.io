@@ -34,6 +34,18 @@ img {
   padding-top: 5rem;
 }
 
+// ICON STYLE
+.social-icon {
+  font-size: 3rem;
+  color: black;
+  transition: all 0.3 ease;
+}
+
+.social-icon:hover {
+  color: var(--primary-color);
+}
+
+// BUTTON STYLE
 .btn-1 {
   background-color: var(--primary-color);
   padding: 0.5rem 2rem;
@@ -179,7 +191,7 @@ img {
   }
 
   .img-about {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
   }
 
@@ -351,8 +363,8 @@ img {
   }
 }
 
-@media (max-width: 576px) {
-  #home p:nth-child(1) {
-    padding-top: 6rem;
-  }
-}
+// @media (max-width: 576px) {
+//   #home p:nth-child(1) {
+//     padding-top: 1rem;
+//   }
+// }
