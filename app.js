@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
       0: {
         items: 1,
       },
-      600: {
+      768: {
         items: 2,
       },
-      1000: {
+      1024: {
         items: 3,
       },
     },
